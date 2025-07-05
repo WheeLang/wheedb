@@ -53,7 +53,7 @@ content:
 
 dependencies:
   - name: bitey
-    source: https://github.com/Chocobitey/bitey/releases/latest
+    source: https://github.com/Chocobitey/bitey/releases/latest/download
     binary: bitey
     location: /opt/bitey/bin/bitey
     binlink: /usr/bin/bitey
