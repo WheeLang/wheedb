@@ -17,6 +17,11 @@ directories:
     group: chocobitey
     permissions: 771
 
+  - path: /opt/bitey/Whee
+    owner: _bitey
+    group: chocobitey
+    permissions: 771
+
   - path: /opt/bitey/Chocobitey/remotes/main
     recursive: true
 
