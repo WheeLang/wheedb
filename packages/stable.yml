@@ -17,6 +17,11 @@ directories:
     group: chocobitey
     permissions: 771
 
+  - path: /opt/bitey/Whee
+    owner: _bitey
+    group: chocobitey
+    permissions: 771
+
   - path: /opt/bitey/Chocobitey/remotes/main
     recursive: true
 
@@ -48,7 +53,7 @@ content:
 
 dependencies:
   - name: bitey
-    source: https://github.com/Chocobitey/bitey/releases/latest
+    source: https://github.com/Chocobitey/bitey/releases/latest/download
     binary: bitey
     location: /opt/bitey/bin/bitey
     binlink: /usr/bin/bitey
