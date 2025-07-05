@@ -23,9 +23,15 @@ directories:
     permissions: 771
 
   - path: /opt/bitey/Chocobitey/remotes/main
+    owner: _bitey
+    group: chocobitey
+    permissions: 771
     recursive: true
 
   - path: /opt/bitey/Chocolaterie
+    owner: _bitey
+    group: chocobitey
+    permissions: 771
     recursive: true
 
 remotes:
