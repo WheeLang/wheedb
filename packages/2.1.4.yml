@@ -1,13 +1,54 @@
 name: Whee
 version: 2.1.4
+type: stable  # or "staging" or "custom"
+
+users:
+  group: chocobitey
+  user: _bitey
+
+directories:
+  - path: /opt/bitey
+    owner: _bitey
+    group: chocobitey
+    permissions: 770
+
+  - path: /opt/bitey/bin
+    owner: _bitey
+    group: chocobitey
+    permissions: 771
+
+  - path: /opt/bitey/Chocobitey/remotes/main
+    recursive: true
+
+  - path: /opt/bitey/Chocolaterie
+    recursive: true
+
+remotes:
+  - name: main
+    url: https://raw.githubusercontent.com/Chocobitey/remote-main/refs/heads/main/remote.yml
+    target: /opt/bitey/Chocobitey/remotes/main/remote.yml
 
 content:
-    - name: whee
-      source: https://github.com/WheeLang/whee/releases/download/v2.1.4/whee
-      location: /opt/bitey/Whee/whee
-    - name: wheec
-      source: https://github.com/WheeLang/whee/releases/download/v2.1.4/wheec
-      location: /opt/bitey/Whee/wheec
-    - name: wcc
-      source: https://github.com/WheeLang/whee/releases/download/v2.1.4/wcc
-      location: /opt/bitey/Whee/wcc
+  - name: whee
+    source: https://github.com/WheeLang/whee/releases/download/v2.1.4/whee
+    location: /opt/bitey/Whee/whee
+    binlink: /usr/bin/whee
+
+  - name: wheec
+    source: https://github.com/WheeLang/whee/releases/download/v2.1.4/wheec
+    location: /opt/bitey/Whee/wheec
+    binlink: /usr/bin/wheec
+
+  - name: wcc
+    source: https://github.com/WheeLang/whee/releases/download/v2.1.4/wcc
+    location: /opt/bitey/Whee/wcc
+    binlink: /usr/bin/wcc
+    optional: true
+    description: Whee Compiler to Binary
+
+dependencies:
+  - name: bitey
+    source: https://github.com/Chocobitey/bitey/releases/latest
+    binary: bitey
+    location: /opt/bitey/bin/bitey
+    binlink: /usr/bin/bitey
