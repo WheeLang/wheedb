@@ -1,6 +1,6 @@
 name: Whee
 version: 2.1.4
-type: stable  # or "staging" or "custom"
+type: stable
 
 users:
   group: chocobitey
