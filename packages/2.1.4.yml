@@ -1,0 +1,13 @@
+name: Whee
+version: 2.1.4
+
+content:
+    - name: whee
+      source: https://github.com/WheeLang/whee/releases/download/v2.1.4/whee
+      location: /opt/bitey/Whee/whee
+    - name: wheec
+      source: https://github.com/WheeLang/whee/releases/download/v2.1.4/wheec
+      location: /opt/bitey/Whee/wheec
+    - name: wcc
+      source: https://github.com/WheeLang/whee/releases/download/v2.1.4/wcc
+      location: /opt/bitey/Whee/wcc
