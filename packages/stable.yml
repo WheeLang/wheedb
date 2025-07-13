@@ -1,65 +1,65 @@
 name: Whee
-version: 2.1.4
+version: stable
 type: stable
 
 users:
-  group: chocobitey
-  user: _bitey
+  group: chocobitpup
+  user: _bitpuppy
 
 directories:
-  - path: /opt/bitey
-    owner: _bitey
-    group: chocobitey
+  - path: /opt/bitpuppy
+    owner: _bitpuppy
+    group: chocobitpup
     permissions: 770
 
-  - path: /opt/bitey/bin
-    owner: _bitey
-    group: chocobitey
+  - path: /opt/bitpuppy/bin
+    owner: _bitpuppy
+    group: chocobitpup
     permissions: 771
 
-  - path: /opt/bitey/Whee
-    owner: _bitey
-    group: chocobitey
+  - path: /opt/bitpuppy/Whee
+    owner: _bitpuppy
+    group: chocobitpup
     permissions: 771
 
-  - path: /opt/bitey/Chocobitey/remotes/main
-    owner: _bitey
-    group: chocobitey
+  - path: /opt/bitpuppy/Chocobitpup/remotes/main
+    owner: _bitpuppy
+    group: chocobitpup
     permissions: 771
     recursive: true
 
-  - path: /opt/bitey/Chocolaterie
-    owner: _bitey
-    group: chocobitey
+  - path: /opt/bitpuppy/Chocolaterie
+    owner: _bitpuppy
+    group: chocobitpup
     permissions: 771
     recursive: true
 
 remotes:
   - name: main
-    url: https://raw.githubusercontent.com/Chocobitey/remote-main/refs/heads/main/remote.yml
-    target: /opt/bitey/Chocobitey/remotes/main/remote.yml
+    url: https://raw.githubusercontent.com/Chocobitpup/remote-main/refs/heads/main/remote.yml
+    target: /opt/bitpuppy/Chocobitpup/remotes/main/remote.yml
 
 content:
   - name: whee
-    source: https://github.com/WheeLang/whee/releases/download/v2.1.4/whee
-    location: /opt/bitey/Whee/whee
+    source: https://github.com/WheeLang/whee/releases/latest/download/whee
+    location: /opt/bitpuppy/Whee/whee
     binlink: /usr/bin/whee
 
   - name: wheec
-    source: https://github.com/WheeLang/whee/releases/download/v2.1.4/wheec
-    location: /opt/bitey/Whee/wheec
+    source: https://github.com/WheeLang/whee/releases/latest/download/wheec
+    location: /opt/bitpuppy/Whee/wheec
     binlink: /usr/bin/wheec
 
   - name: wcc
-    source: https://github.com/WheeLang/whee/releases/download/v2.1.4/wcc
-    location: /opt/bitey/Whee/wcc
+    source: https://github.com/WheeLang/whee/releases/latest/download/wcc
+    location: /opt/bitpuppy/Whee/wcc
     binlink: /usr/bin/wcc
     optional: true
     description: Whee Compiler to Binary
 
 dependencies:
-  - name: bitey
-    source: https://github.com/Chocobitey/bitey/releases/latest/download
-    binary: bitey
-    location: /opt/bitey/bin/bitey
-    binlink: /usr/bin/bitey
+  - name: bitpuppy
+    source: https://github.com/Chocobitpup/bitpuppy/releases/latest/download
+    binary: bitpup
+    location: /opt/bitpuppy/bin/bitpup
+    binlink: /usr/bin/bitpup
