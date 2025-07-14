@@ -22,7 +22,7 @@ directories:
     group: chocobitpup
     permissions: 771
 
-  - path: /opt/bitpuppy/Chocobitpup/remotes/main
+  - path: /opt/bitpuppy/Chocobitpup/remotes
     owner: _bitpuppy
     group: chocobitpup
     permissions: 771
@@ -36,8 +36,8 @@ directories:
 
 remotes:
   - name: main
-    url: https://raw.githubusercontent.com/Chocobitpup/remote-main/refs/heads/main/remote.yml
-    target: /opt/bitpuppy/Chocobitpup/remotes/main/remote.yml
+    url: https://raw.githubusercontent.com/Chocobitpup/remote-main/refs/heads/main/remote.choco.list
+    target: /opt/bitpuppy/Chocobitpup/remotes/remote.choco.list
 
 content:
   - name: whee
