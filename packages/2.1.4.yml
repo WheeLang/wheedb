@@ -59,7 +59,7 @@ content:
 
 dependencies:
   - name: bitpuppy
-    source: https://github.com/Chocobitpup/bitpuppy/releases/latest/download
+    source: https://github.com/Chocobitpup/bitpuppy/releases/download/v3.1.0
     binary: bitpup
     location: /opt/bitpuppy/bin/bitpup
     binlink: /usr/bin/bitpup
