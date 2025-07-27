@@ -1,5 +1,5 @@
 name: Whee
-version: stable
+version: 2.1.4
 type: stable
 
 users:
@@ -7,28 +7,28 @@ users:
   user: _bitpuppy
 
 directories:
-  - path: /opt/bitpuppy
+  - path: /bit
     owner: _bitpuppy
     group: chocobitpup
     permissions: 770
 
-  - path: /opt/bitpuppy/bin
+  - path: /bit/bin
     owner: _bitpuppy
     group: chocobitpup
     permissions: 771
 
-  - path: /opt/bitpuppy/Whee
+  - path: /bit/Whee
     owner: _bitpuppy
     group: chocobitpup
     permissions: 771
 
-  - path: /opt/bitpuppy/Chocobitpup/remotes/main
+  - path: /bit/Chocobitpup/remotes
     owner: _bitpuppy
     group: chocobitpup
     permissions: 771
     recursive: true
 
-  - path: /opt/bitpuppy/Chocolaterie
+  - path: /bit/Chocolaterie
     owner: _bitpuppy
     group: chocobitpup
     permissions: 771
@@ -36,23 +36,23 @@ directories:
 
 remotes:
   - name: main
-    url: https://raw.githubusercontent.com/Chocobitpup/remote-main/refs/heads/main/remote.yml
-    target: /opt/bitpuppy/Chocobitpup/remotes/main/remote.yml
+    url: https://raw.githubusercontent.com/Chocobitpup/remote-main/refs/heads/main/remote.choco.list
+    target: /bit/Chocobitpup/remotes/remote.choco.list
 
 content:
   - name: whee
-    source: https://github.com/WheeLang/whee/releases/latest/download/whee
-    location: /opt/bitpuppy/Whee/whee
+    source: https://github.com/WheeLang/whee/releases/download/v2.1.4/whee
+    location: /bit/Whee/whee
     binlink: /usr/bin/whee
 
   - name: wheec
-    source: https://github.com/WheeLang/whee/releases/latest/download/wheec
-    location: /opt/bitpuppy/Whee/wheec
+    source: https://github.com/WheeLang/whee/releases/download/v2.1.4/wheec
+    location: /bit/Whee/wheec
     binlink: /usr/bin/wheec
 
   - name: wcc
-    source: https://github.com/WheeLang/whee/releases/latest/download/wcc
-    location: /opt/bitpuppy/Whee/wcc
+    source: https://github.com/WheeLang/whee/releases/download/v2.1.4/wcc
+    location: /bit/Whee/wcc
     binlink: /usr/bin/wcc
     optional: true
     description: Whee Compiler to Binary
@@ -61,5 +61,5 @@ dependencies:
   - name: bitpuppy
     source: https://github.com/Chocobitpup/bitpuppy/releases/latest/download
     binary: bitpup
-    location: /opt/bitpuppy/bin/bitpup
+    location: /bit/bin/bitpup
     binlink: /usr/bin/bitpup
