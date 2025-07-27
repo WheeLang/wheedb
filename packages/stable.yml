@@ -1,5 +1,5 @@
 name: Whee
-version: 2.1.4
+version: 2.1.5
 type: stable
 
 users:
@@ -41,17 +41,17 @@ remotes:
 
 content:
   - name: whee
-    source: https://github.com/WheeLang/whee/releases/download/v2.1.4/whee
+    source: https://github.com/WheeLang/whee/releases/download/v2.1.5/whee
     location: /bit/Whee/whee
     binlink: /usr/bin/whee
 
   - name: wheec
-    source: https://github.com/WheeLang/whee/releases/download/v2.1.4/wheec
+    source: https://github.com/WheeLang/whee/releases/download/v2.1.5/wheec
     location: /bit/Whee/wheec
     binlink: /usr/bin/wheec
 
   - name: wcc
-    source: https://github.com/WheeLang/whee/releases/download/v2.1.4/wcc
+    source: https://github.com/WheeLang/whee/releases/download/v2.1.5/wcc
     location: /bit/Whee/wcc
     binlink: /usr/bin/wcc
     optional: true
