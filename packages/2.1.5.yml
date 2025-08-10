@@ -34,6 +34,12 @@ directories:
     permissions: 771
     recursive: true
 
+  - path: /bit/data
+    owner: _bitpuppy
+    group: chocobitpup
+    premissions: 771
+    recrusive: true
+
 remotes:
   - name: main
     url: https://raw.githubusercontent.com/Chocobitpup/remote-main/refs/heads/main/remote.choco.list
