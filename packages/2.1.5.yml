@@ -42,22 +42,22 @@ directories:
 
 remotes:
   - name: main
-    url: https://raw.githubusercontent.com/Chocobitpup/remote-main/refs/heads/main/remote.choco.list
+    url: https://raw.githubusercontent.com/klydraproject/remote-main/refs/heads/main/remote.choco.list
     target: /bit/Chocobitpup/remotes/remote.choco.list
 
 content:
   - name: whee
-    source: https://github.com/WheeLang/whee/releases/download/v2.1.5/whee
+    source: https://github.com/swinglang/swing/releases/download/v2.1.5/whee
     location: /bit/Whee/whee
     binlink: /usr/bin/whee
 
   - name: wheec
-    source: https://github.com/WheeLang/whee/releases/download/v2.1.5/wheec
+    source: https://github.com/swinglang/swing/releases/download/v2.1.5/wheec
     location: /bit/Whee/wheec
     binlink: /usr/bin/wheec
 
   - name: wcc
-    source: https://github.com/WheeLang/whee/releases/download/v2.1.5/wcc
+    source: https://github.com/swinglang/swing/releases/download/v2.1.5/wcc
     location: /bit/Whee/wcc
     binlink: /usr/bin/wcc
     optional: true
@@ -65,7 +65,7 @@ content:
 
 dependencies:
   - name: bitpuppy
-    source: https://github.com/Chocobitpup/bitpuppy/releases/latest/download
+    source: https://github.com/klydracore/bitpuppy/releases/latest/download
     binary: bitpup
     location: /bit/bin/bitpup
     binlink: /usr/bin/bitpup
