@@ -59,7 +59,7 @@ content:
 
 dependencies:
   - name: bitpuppy
-    source: https://github.com/klydracore/bitpuppy/releases/download/v3.1.0
+    source: https://github.com/klydracore/bitpuppy/releases/download/v3.1.3
     binary: bitpup
     location: /opt/bitpuppy/bin/bitpup
     binlink: /usr/bin/bitpup
